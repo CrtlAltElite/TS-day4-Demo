@@ -1,28 +1,27 @@
 import Container from "./Container";
 
+class LeftLeaningContainer extends Container {
+    constructor(){
+        super();
+        this.borderRadius = "10% 25%";
+    }
+}
 class RightLeaningContainer extends Container {
-    constructor() {
-      super();
-      this.borderRadius = "25% 10%";
-    }
-}
-  
-  class LeftLeaningContainer extends Container {
-    constructor() {
-      super();
-      this.borderRadius = "10% 25%";
-    }
-}
-  
-  class CircleContainer extends Container {
-    constructor() {
-      super();
-      this.borderRadius = "50%";
+    constructor(){
+        super();
+        this.borderRadius = "25% 10%";
     }
 }
 
-  export{
-    CircleContainer as CircleShape,
-    LeftLeaningContainer as LeftLeaningShape,
-    RightLeaningContainer as RightLeaningShape
-  }
+class CircleContainer extends Container {
+    constructor(){
+        super();
+        this.borderRadius = "50%";
+    }
+}
+
+export{
+    LeftLeaningContainer,
+    RightLeaningContainer,
+    CircleContainer
+}

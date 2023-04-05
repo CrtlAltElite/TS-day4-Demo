@@ -1,17 +1,19 @@
 import Canvas from "./Canvas";
-import Click from "./Click";
-import {WidgetClick} from "./clicks";
+
 import Container from "./Container";
-import { CircleShape, LeftLeaningShape, RightLeaningShape } from "./containers";
+import { CircleContainer, LeftLeaningContainer, RightLeaningContainer } from "./containers";
 import Component from './Component';
+import Click from "./Click";
+import { RemoveWidgetClick, WidgetClick } from "./clicks";
 
 export{
     Canvas,
+    Container,
+    CircleContainer, 
+    LeftLeaningContainer,
+    RightLeaningContainer,
+    Component,
     Click,
     WidgetClick,
-    Container as Shape,
-    CircleShape, 
-    LeftLeaningShape,
-    RightLeaningShape,
-    Component as Widget
+    RemoveWidgetClick
 }
